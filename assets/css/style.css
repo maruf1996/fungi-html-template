@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variable css  */
+:root {
+  --black: #212228;
+  --white: #fff;
+  --primary: #fd562a;
+  --body-font: "Poppins", sans-serif;
+}
+
+/* common css  */
+body {
+  font-family: var(--body-font);
+  color: var(--black);
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* header css start */
+.header-area {
+  background-color: var(--black);
+  padding: 30px 0;
+}
+.header-area .header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-area .header-main .menu-main {
+  display: flex;
+}
+.header-area .header-main .menu-main .menu ul li {
+  display: inline-block;
+}
+.header-area .header-main .menu-main .menu ul li a {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 27px;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.header-area .header-main .menu-main .menu ul li a:hover {
+  color: var(--primary);
+}
+.header-area .header-main .menu-main .social-icons ul li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.header-area .header-main .menu-main .social-icons ul::before {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 18px;
+  background-color: rgb(255, 255, 255, 0.4);
+  display: inline-block;
+  margin-right: 24px;
+  top: 4px;
+}
+.header-area .header-main .menu-main .social-icons ul li a {
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 400;
+}
+.header-area .header-main .menu-main .social-icons ul li a:hover {
+  color: var(--primary);
+}
+/* header css end */
+/* hero css start */
+.hero-section {
+  background-color: var(--black);
+  padding: 50px 0;
+  margin-top: -5px;
+}
+.hero-section .hero-main {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+.hero-section .hero-main .hero-img {
+  width: 500px;
+}
+.hero-section .hero-main .hero-content h2 {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.hero-section .hero-main .hero-content h1 {
+  color: var(--white);
+  font-size: 90px;
+  line-height: 108px;
+  margin-bottom: 20px;
+}
+.hero-section .hero-main .hero-content h1 .name-color {
+  color: var(--primary);
+}
+.hero-section .hero-main .hero-content p {
+  color: var(--white);
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.btn-group .hire-btn {
+  background-color: var(--primary);
+  padding: 15px 42px;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-group a.hire-btn:hover {
+  background-color: hsl(13, 95%, 34%);
+}
+.btn-group .about-btn {
+  border: 2px solid var(--primary);
+  background-color: var(--black);
+  color: var(--white);
+  padding: 15px 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-group a.about-btn:hover {
+  background-color: var(--primary);
+}
+/* hero css end */
