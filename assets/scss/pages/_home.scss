@@ -1,0 +1,104 @@
+@use "../utils" as *;
+
+/* hero css start */
+
+.hero-section {
+  background-color: var(--pn-black);
+  padding-top: 120px;
+  padding-bottom: 50px;
+  width: 100%;
+  & .hero-main {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    .hero-img {
+      max-width: 350px;
+    }
+    & .hero-content h2 {
+      color: var(--pn-white);
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+    & .hero-content h1 {
+      color: var(--pn-white);
+      font-size: 90px;
+      line-height: 108px;
+      margin-bottom: 20px;
+      & .name-color {
+        color: var(--pn-primary);
+      }
+    }
+    p {
+      color: var(--pn-white);
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* hero css end */
+
+/* intro section css start */
+.intro-card {
+  border: 1px solid #e0e0e0;
+  padding: 48px;
+  border-radius: 12px;
+  background: var(--pn-white);
+  transition: 0.3s;
+  & .intro-icon {
+    & i {
+      transition: 0.3s;
+      font-size: 40px;
+      color: #e0e0e0;
+    }
+  }
+  & .intro-content {
+    & h3 {
+      font-size: 28px;
+      line-height: 34px;
+      color: var(--pn-black-2);
+      margin-bottom: 20px;
+    }
+  }
+  &:hover {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+    border-color: #fff;
+    & .intro-icon {
+      & i {
+        color: var(--pn-primary);
+      }
+    }
+  }
+}
+/* intro section css end */
+/* fact section css end */
+.fact-section {
+  background-color: #212228;
+  padding: 60px 60px;
+  .fact-item {
+    padding: 50px;
+    text-align: center;
+    .fact-icon {
+      i {
+        font-size: 60px;
+        color: var(--pn-primary);
+      }
+    }
+    .fact-content {
+      h3 {
+        font-size: 24px;
+        color: var(--pn-white);
+        line-height: 34px;
+      }
+      p {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 900;
+        color: #bdb9cb;
+      }
+    }
+  }
+}
+/* fact section css end */

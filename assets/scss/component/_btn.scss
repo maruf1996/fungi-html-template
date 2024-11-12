@@ -1,0 +1,32 @@
+@use "../utils" as *;
+
+.primary-btn {
+  background-color: var(--pn-primary);
+  padding: 15px 42px;
+  color: var(--pn-white);
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: hsl(13, 95%, 34%);
+    color: var(--pn-white);
+  }
+}
+.about-btn {
+  border: 2px solid var(--pn-primary);
+  background-color: var(--pn-black);
+  color: var(--pn-white);
+  padding: 15px 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--pn-primary);
+    color: var(--pn-white);
+  }
+}

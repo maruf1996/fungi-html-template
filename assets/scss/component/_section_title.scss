@@ -1,0 +1,37 @@
+@use "../utils" as *;
+
+.section-title {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 72px;
+  margin: 0 auto;
+  & h2 {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 700;
+    &::before,
+    &::after {
+      content: "";
+      border: 8px solid transparent;
+      border-bottom-color: #fd562a;
+      position: absolute;
+      top: 2.5px;
+    }
+    &::before {
+      border-left-color: #fd562a;
+      right: -30px;
+    }
+    &::after {
+      border-right-color: #fd562a;
+      left: -30px;
+    }
+  }
+  & p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

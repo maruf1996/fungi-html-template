@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+.about-content {
+  & h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--pn-primary);
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}

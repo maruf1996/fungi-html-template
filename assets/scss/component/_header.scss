@@ -1,0 +1,55 @@
+@use "../utils" as *;
+
+/* header css start */
+
+.header-area {
+  background-color: var(--pn-black);
+  padding: 30px 0;
+  width: 100%;
+  z-index: 999;
+  & .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .menu-main {
+      display: flex;
+      & .menu ul li {
+        display: inline-block;
+        & a {
+          color: var(--pn-white);
+          font-weight: 700;
+          line-height: 27px;
+          margin-right: 30px;
+          transition: 0.3s;
+          &:hover {
+            color: var(--pn-primary);
+          }
+        }
+      }
+      .social-icons ul li {
+        display: inline-block;
+        margin-right: 24px;
+        & a {
+          transition: 0.3s;
+          color: #fff;
+          font-weight: 400;
+          &:hover {
+            color: var(--pn-primary);
+          }
+        }
+      }
+      & .social-icons ul::before {
+        content: "";
+        position: relative;
+        width: 1px;
+        height: 18px;
+        background-color: rgb(255, 255, 255, 0.4);
+        display: inline-block;
+        margin-right: 24px;
+        top: 4px;
+      }
+    }
+  }
+}
+
+/* header css end */
