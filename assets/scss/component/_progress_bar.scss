@@ -1,0 +1,26 @@
+@use "../utils" as *;
+
+.progress,
+.progress-stacked {
+  height: 0.5rem;
+  background-color: #e9ecef;
+}
+
+.progress-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+  & h6 {
+    color: var(--pn-white);
+    margin-bottom: 14px;
+  }
+  & p {
+    position: absolute;
+    color: var(--pn-primary);
+    right: 0;
+    top: -2px;
+  }
+}
+
+.progress-bar {
+  background-color: var(--pn-primary);
+}

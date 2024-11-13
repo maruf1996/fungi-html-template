@@ -35,3 +35,35 @@
     line-height: 30px;
   }
 }
+
+.section-title-2 {
+  & h3 {
+    font-size: 18px;
+    color: var(--pn-primary);
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: -5px;
+  }
+  & p {
+    color: #615978;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  &-black {
+    & h2 {
+      font-size: 48px;
+      line-height: 58px;
+      color: var(--pn-white);
+    }
+    & p {
+      color: #bdb9cb;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+  }
+}
